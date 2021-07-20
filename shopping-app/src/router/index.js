@@ -1,13 +1,13 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
 
-import HomeRouter   from "./route/home.route";
-// import Shop from "./route/shop.route";
-// import ProductDetail from "./route/product-detail.route";
-// import Profile from "./route/profile.route";
-// import Checkout from "./route/checkout.route";
-// import OrderList from "./route/order-list.route";
-// import OderDetail from "./route/order-detail.route";
+import homeRouter   from "./route/home.route";
+import shopRouter from "./route/shop.route";
+import productDetailRouter from "./route/product-detail.route";
+import profileRouter from "./route/profile.route";
+import checkoutRouter from "./route/checkout.route";
+import orderListRouter from "./route/order-list.route";
+import oderDetailRouter from "./route/order-detail.route";
 
 Vue.use(VueRouter);
 
@@ -15,15 +15,15 @@ Vue.use(VueRouter);
             Per-route Guards
 ================================================*/
 
-export default router = new VueRouter({
+export const router = new VueRouter({
   mode: "history",
   routes: [
-    HomeRouter,
-    Shop,
-    ProductDetail,
-    Profile,
-    Checkout,
-    OrderList,
-    OderDetail,
+    homeRouter,
+    shopRouter,
+    productDetailRouter,
+    profileRouter,
+    checkoutRouter,
+    orderListRouter,
+    oderDetailRouter,
   ],
 });
